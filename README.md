@@ -53,7 +53,7 @@ It demonstrates my ability to manage enterprise-style infrastructure using open-
 
 ---
 
-## 👨‍💻 Author
+## Author
 Joseph Leahy Jr. 
 IT & Cybersecurity Enthusiast | Network Engineer in Training  
 www.linkedin.com/in/joseph-l-904673159
