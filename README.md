@@ -35,6 +35,26 @@ It demonstrates my ability to manage enterprise-style infrastructure using open-
 
 ---
 
+## Logical Wiring Diagram
+
+           [ COAX ] ─────→ [ MODEM ]
+                                 │
+                                 │ (Ethernet Patch)
+                                 ▼
+                         [  Wi-Fi Router  ]
+                                 │ (LAN1)
+                                 ▼
+                     ┌─────────────────────────┐
+                     │   TP-Link managed switch│
+                     │  (Ports 1–8 Front)      │
+                     └─────────────────────────┘
+                   1 ↑        2 ↑       3 ↑       4 ↑ etc...
+                     │        │        │
+                     │        │        └──→ PC
+                     │        └──────────→ Pi-hole
+                     └────────────────────→ Router uplink
+
+
 ## Lessons Learned
 - Network segmentation
 - Certificate signing and creation
