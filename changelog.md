@@ -1,5 +1,9 @@
 # 🧾 Changelog
 
+## [2025-11-13]
+- Purchased a managed switch
+- Purchased a network rack
+
 ## [2025-11-12]
 - Finalized Pi-Hole configuration
 - Prepare network for VLAN trunking
