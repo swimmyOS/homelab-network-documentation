@@ -1,5 +1,9 @@
 # 🧾 Changelog
 
+## [2025-11-13]
+- Purchased TL-SG108E Switch
+- Purchased RackMate TT
+
 ## [2025-11-12]
 - Finalized Pi-Hole configuration
 - Prepare network for VLAN trunking
