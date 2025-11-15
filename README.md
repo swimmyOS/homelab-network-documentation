@@ -35,6 +35,26 @@ It demonstrates my ability to manage enterprise-style infrastructure using open-
 
 ---
 
+## Logical Wiring Diagram
+
+           [ COAX ] ─────→ [ MODEM ]
+                                 │
+                                 │ (Ethernet Patch)
+                                 ▼
+                         [ RAX41v2 Router ]
+                                 │ (LAN1)
+                                 ▼
+                     ┌─────────────────────────┐
+                     │   TP-Link TL-SG108E     │
+                     │  (Ports 1–8 Front)      │
+                     └─────────────────────────┘
+                   1 ↑        2 ↑       3 ↑       4 ↑ etc...
+                     │        │        │
+                     │        │        └──→ PC
+                     │        └──────────→ Pi-hole
+                     └────────────────────→ Router uplink
+
+
 ## Lessons Learned
 - Network segmentation
 - Certificate signing and creation
