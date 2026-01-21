@@ -73,7 +73,17 @@ It demonstrates my ability to manage enterprise-style infrastructure using open-
 
 ---
 
+## Related Projects
+
+This homelab network supports and integrates with the following standalone infrastructure projects:
+
+- **Raspberry Pi NAS & Media Server**  
+  Centralized storage and media streaming platform built on Linux, providing SMB file sharing and Jellyfin-based media access across the LAN.  
+  ➜ https://github.com/<swimmyOS>/rpi-nas-media-server
+
+---
+
 ## Author
 Joseph Leahy Jr. 
-IT & Cybersecurity Enthusiast | Network Engineer in Training  
+IT & Cybersecurity Enthusiast | Help Desk T1 
 www.linkedin.com/in/joseph-l-904673159 | josephleahyjr@outlook.com
