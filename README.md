@@ -45,7 +45,7 @@ This homelab network supports and integrates with the following standalone infra
 
 - **Raspberry Pi NAS & Media Server**  
   Centralized storage and media streaming platform built on Linux, providing SMB file sharing and Jellyfin-based media access across the LAN.  
-  ➜ https://github.com/<your-username>/rpi-nas-media-server
+  https://github.com/swimmyOS/rpi-nas-media-server
 
 ---
 
