@@ -1,1 +1,9 @@
-layout
+# Publish only what is listed here.
+*
+!.gitignore
+!README.md
+!changelog.md
+!docs/
+!docs/*.md
+!docs/network-diagram.svg
+!docs/network-diagram.png

@@ -17,6 +17,8 @@ It demonstrates my ability to manage enterprise-style infrastructure using open-
 ---
 
 ### Technologies Used
+- Fortinet FortiGate (FortiOS): routing, firewall policies, DHCP, NTP
+- TP-Link managed switch (802.1Q VLANs)
 - Pi-hole DNS
 - Samba (SMB)
 - Jellyfin
@@ -49,15 +51,17 @@ This homelab network supports and integrates with the following standalone infra
 
 ---
 
-## VLAN Segmentation (Planned)
+## Current Network (Segmented, October 2026)
 
-| VLAN | Name | Purpose |
-|------|------|---------|
-| 10 | Management | Network infrastructure and admin access |
-| 20 | LAN | Trusted user devices |
-| 30 | Guest | Isolated guest Wi-Fi |
-| 40 | IoT | Smart devices |
-| 99 | Transit | Inter-VLAN routing |
+The original flat network has been replaced by a segmented design. A next-generation firewall routes separate zones for management, trusted devices and servers over a single 802.1Q trunk, the Wi-Fi router now runs as an access point, and the home server sits in its own zone. Pi-hole filters DNS for every trusted device, and the firewall blocks attempts to use any other resolver.
+
+![Network architecture](docs/network-diagram.svg)
+
+- **[Architecture](docs/architecture.md):** components, zones, trust model, DNS and time design
+- **[Design decisions](docs/design-decisions.md):** the main choices and the alternatives considered
+- **[Project summary](docs/project-summary.md):** how the migration was planned, validated and hardened, and lessons learned
+
+Detailed configuration, addressing and operational runbooks are kept in private documentation.
 
 ---
 
@@ -71,7 +75,6 @@ This homelab network supports and integrates with the following standalone infra
 ---
 
 ## Future Plans
-- Implement VLAN segmentation with Layer 3 routing
 - Deploy monitoring (Grafana + InfluxDB)
 - Add IDS/IPS (Suricata or Snort)
 - Containerize network services
@@ -83,4 +86,4 @@ This homelab network supports and integrates with the following standalone infra
 
 **Joseph Leahy Jr.**  
 IT & Cybersecurity Enthusiast | Help Desk Tier 1  
-https://www.linkedin.com/in/joseph-l-904673159  
+https://www.linkedin.com/in/joseph-l-904673159
